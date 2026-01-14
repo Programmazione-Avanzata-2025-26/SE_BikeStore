@@ -64,8 +64,8 @@ class View:
 
         # Riga 2
         self.txt_lunghezza_cammino = ft.TextField(label="Lunghezza Cammino", width=120)
-        self.dd_prodotto_iniziale = ft.Dropdown(label="Prodotto Iniziale", width=350, on_change=self.controller.choice_prod_end)
-        self.dd_prodotto_finale = ft.Dropdown(label="Prodotto Finale", width=350, on_change=self.controller.choice_prod_start)
+        self.dd_prodotto_iniziale = ft.Dropdown(label="Prodotto Iniziale", width=350, on_change=self.controller.choice_prod_start)
+        self.dd_prodotto_finale = ft.Dropdown(label="Prodotto Finale", width=350, on_change=self.controller.choice_prod_end)
 
         self.pulsante_cerca_cammino = ft.ElevatedButton(text="Cerca", on_click=self.controller.handle_cerca_cammino, width=120)
 
